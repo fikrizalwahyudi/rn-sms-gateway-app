@@ -1,7 +1,7 @@
 /** @format */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
+import Sms from './src/Sms';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => Sms);

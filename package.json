@@ -7,9 +7,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "native-base": "^2.8.1",
     "react": "16.6.1",
     "react-native": "0.57.5",
-    "react-native-sms-android": "^0.4.1"
+    "react-native-axios": "^0.17.1",
+    "react-native-gesture-handler": "^1.0.10",
+    "react-native-sms-android": "^0.4.1",
+    "react-navigation": "^2.12.1",
+    "toggle-switch-react-native": "^2.0.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

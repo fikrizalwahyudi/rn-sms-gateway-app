@@ -35,12 +35,12 @@ export default class App extends Component<Props> {
 
   someFunction() {
     SmsAndroid.sms(
-      '+6281554579425', // phone number to send sms to
+      '+6281286159467', // phone number to send sms to
       'This is the sms text', // sms body
       'sendDirect', // sendDirect or sendIndirect
       (err, message) => {
         if (err){
-          console.log("error");
+          console.log(err);
         } else {
           console.log(message); // callback message
         }

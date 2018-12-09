@@ -3,6 +3,7 @@ package com.smsapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.rhaker.reactnativesmsandroid.RNSmsAndroidPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,7 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new RNSmsAndroidPackage(),
-          new MainReactPackage()
+          new MainReactPackage(),
+            new RNGestureHandlerPackage()
       );
     }
 
