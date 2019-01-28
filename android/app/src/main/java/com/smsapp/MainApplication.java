@@ -3,6 +3,8 @@ package com.smsapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.pilloxa.backgroundjob.BackgroundJobPackage;
+import com.jamesisaac.rnbackgroundtask.BackgroundTaskPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.rhaker.reactnativesmsandroid.RNSmsAndroidPackage;
 import com.facebook.react.ReactNativeHost;
@@ -26,6 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new RNSmsAndroidPackage(),
           new MainReactPackage(),
+            new BackgroundJobPackage(),
+            new BackgroundTaskPackage(),
             new RNGestureHandlerPackage()
       );
     }
@@ -45,5 +49,6 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    BackgroundTaskPackage.useContext(this);
   }
 }

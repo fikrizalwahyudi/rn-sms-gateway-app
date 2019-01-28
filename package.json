@@ -12,6 +12,8 @@
     "react": "16.6.1",
     "react-native": "0.57.5",
     "react-native-axios": "^0.17.1",
+    "react-native-background-job": "^2.2.0",
+    "react-native-background-task": "^0.2.1",
     "react-native-gesture-handler": "^1.0.10",
     "react-native-sms-android": "^0.4.1",
     "react-navigation": "^2.12.1",
